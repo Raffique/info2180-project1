@@ -1,11 +1,223 @@
 /* Add your CSS to this file */
+:root{
+    --picw:100px;
+    --pich:100px:
+}
+
+html{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+}
+
 body {
     margin: 0;
     font-size: 16px;
 }
 
+
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+header{
+    background-color: white;
+    font-size: 18px;
+    height: 40px;
+}
+
+header a{
+    color: #6b7280;
+    line-height: 100%;
+}
+
+header a:hover{
+    color: #5A67D8;
+}
+
+header h1{
+    font-size: 18px;
+    color: #000;
+    float: left;
+}
+
+header ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header li{
+    float: right;
+    margin: 10px;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.overview-hero{
+    background-color: #E2E8F0;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+
+.overview-hero img{
+    width: var(--picw);
+    height: var(--pich);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.overview-hero > .container{
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+
+.overview-hero .overview-hero-image{
+    display: flex;
+}
+
+.overview-hero .overview-hero-text{
+    padding-left: 50px;
+}
+
+.learn-about .h3{
+    color: #48BB78;
+    font-size: 21px;
+
+}
+
+.learn-about img{
+    width: 100%;
+    height: 100%;
+}
+
+.learn-about h2{
+    font-size: 24px;
+    color: #48BB78;
+}
+.learn-about h3{
+    color: #48BB78;
+}
+
+.learn-about .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+}
+
+.learn-about .card{
+    display: grid;
+    grid-template-rows: 1.6fr 1fr;
+    border: solid 2px gray;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 3px 3px 5px 5px #111;
+}
+
+
+
+.testing{
+    background-color: #4A5568;
+    color: white;
+}
+
+.testing .container{
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    align-items: center;
+}
+
+.testing-desciption h2{
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.testing-desciption p{
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.testing .cta{
+    background-color: #48BB78;
+    border-radius: 5px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    justify-items: center;
+}
+
+.cta a{
+    color: white;
+    text-decoration: none;
+}
+
+.stories h2 a{
+    color: #5A67D8;
+    font-size: 18px;
+}
+
+
+
+article img{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+.container article{
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.newsletter{
+    background-color: #48BB78;
+    color: white;
+    text-align: center;
+    padding-left: 260px;
+    padding-right: 260px;
+}
+
+.newsletter .container form{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.newsletter input{
+    width: 280px;
+    height: 25px;
+}
+
+.newsletter button{
+    background-color: #5A67D8;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
+footer{
+    padding-top: 20px;
+    background-color: #4A5568;
+    color: white;
+    height: 30px;
+    
 }
